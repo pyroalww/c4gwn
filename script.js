@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(function() {
                         document.getElementById('fullscreen').classList.add('active');
                         window.location.href = option.id === 'leftOption' ? 'https://pyroalww.github.io/pyrorats' : 'https://pyroalww.github.io/pyroalw';
-                    }, 55500); // 2 saniye sonra yönlendirme yap
+                    }, 200); //
                 })
                 .catch(error => {
                     console.error('USER CHECK UNSUCCESSFULL!:', error);
